@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
+
   <body>
     <!-- Navbar -->
     <nav id="navbar">
@@ -40,7 +41,7 @@
     </nav>
 
     <!-- Home -->
-    <section id="home">
+    <section id="home" class="section">
       <img
         src="images/portfolio-logo.png"
         alt="Hamm's profile photo"
@@ -57,8 +58,9 @@
         CONTACT ME
       </button>
     </section>
+
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
       <h1>About me</h1>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora rerum
@@ -69,9 +71,19 @@
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
-            <i class="fab fa-vuejs"></i>
+            <i class="fab fa-html5"></i>
           </div>
-          <div class="major__title">Front-end</div>
+          <h2 class="major__title">Front-end</h2>
+          <div class="major__description">
+            HTML, CSS, JavaScript, TypeScript <br />
+            React, Vue, WebAPI
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-mobile"></i>
+          </div>
+          <h2 class="major__title">Front-end</h2>
           <div class="major__description">
             HTML, CSS, JavaScript, TypeScript <br />
             React, Vue, WebAPI
@@ -81,17 +93,7 @@
           <div class="major__icon">
             <i class="fab fa-vuejs"></i>
           </div>
-          <div class="major__title">Front-end</div>
-          <div class="major__description">
-            HTML, CSS, JavaScript, TypeScript <br />
-            React, Vue, WebAPI
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-vuejs"></i>
-          </div>
-          <div class="major__title">Front-end</div>
+          <h2 class="major__title">Front-end</h2>
           <div class="major__description">
             HTML, CSS, JavaScript, TypeScript <br />
             React, Vue, WebAPI
@@ -101,24 +103,30 @@
       <div class="about__jobs">
         <div class="job">
           <img src="images/sandbank.png" alt="sandbank" class="job__logo" />
-          <p class="job__name">sandbank</p>
-          <p class="job__period">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-            reprehenderit.
-          </p>
+          <div class="job__description">
+            <p class="job__name">
+              Currently working at Samsung as Software Engineer
+            </p>
+            <p class="job__period">
+              2019 Sept - Until now
+            </p>
+          </div>
         </div>
         <div class="job">
           <img src="images/sandbank.png" alt="sandbank" class="job__logo" />
-          <p class="job__name">sandbank</p>
-          <p class="job__period">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
-            quod.
-          </p>
+          <div class="job__description">
+            <p class="job__name">
+              Currently working at Samsung as Software Engineer
+            </p>
+            <p class="job__period">
+              2019 Sept - Until now
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>
@@ -173,7 +181,7 @@
       </div>
     </section>
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
       <h1>My Work</h1>
       <h2>Project</h2>
       <div class="work__categories">
@@ -222,7 +230,7 @@
       </div>
     </section>
     <!-- Testmonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
       <h1>Testimonials</h1>
       <h2>Lorem ipsum dolor sit amet.</h2>
       <div class="testimonials">
@@ -249,7 +257,7 @@
       </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="contatc__email">aka.hamm@gmail.com</h2>
       <div class="contact__links">
