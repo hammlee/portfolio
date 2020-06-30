@@ -26,16 +26,18 @@
     <nav id="navbar">
       <div class="navbar__logo">
         <img src="images/favicon.png" alt="" width="22px;" />
-        <a href="#">I am Hamm</a>
+        <a href="#">HStudio</a>
       </div>
       <div class="navbar__menu">
         <ul class="navbar__menu">
-          <li class="navbar__menu__item active">Home</li>
-          <li class="navbar__menu__item">About</li>
-          <li class="navbar__menu__item">Skills</li>
-          <li class="navbar__menu__item">My work</li>
-          <li class="navbar__menu__item">Testmonials</li>
-          <li class="navbar__menu__item">Contact</li>
+          <li class="navbar__menu__item active" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#work">My work</li>
+          <li class="navbar__menu__item" data-link="#testimonials">
+            Testimonials
+          </li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
         </ul>
       </div>
       <!-- Toggle button -->
@@ -53,12 +55,12 @@
       />
       <h1 class="home__title">
         Hello, <br />
-        I'm Evangelist
+        I'm Evangelist.
       </h1>
       <h2 class="home__description">
-        'sandbank's Full Stack Engineer and CEO at DA:Ground
+        Jason Lee, CEO and Developer at [sandbank]
       </h2>
-      <button class="home__contact">
+      <button class="home__contact" data-link="#contact">
         CONTACT ME
       </button>
     </section>
@@ -285,7 +287,7 @@
       </div>
     </section>
 
-    <!-- Testmonials -->
+    <!-- Testimonials -->
     <section id="testimonials" class="section">
       <div class="section__container">
         <h1>Testimonials</h1>
