@@ -86,8 +86,11 @@ h3 {
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-black);
+  color: var(--color-dark-grey);
   margin: 4px 0;
+}
+hr {
+  opacity: 0;
 }
 
 /* Navabar */
@@ -195,7 +198,7 @@ p {
 }
 .major__icon:hover i {
   color: var(--color-dark-blue);
-  transform: rotate(-30deg) scale(1.1);
+  transform: scale(1.1);
 }
 .major__title,
 .major__description {
@@ -439,16 +442,18 @@ p {
   color: var(--color-white);
   background-color: var(--color-dark-blue);
   border-radius: 50%;
-  /* display는 animation이 먹지 않음 */
   opacity: 0;
   pointer-events: none;
   transition: all 300ms ease-in;
 }
 
 .arrow-up.visible {
-  opacity: 1;
+  opacity: 0.5;
   pointer-events: auto;
   display: block;
+}
+.arrow-up.visible:hover {
+  opacity: 1;
 }
 
 /* For below 768px screen width */
