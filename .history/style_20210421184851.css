@@ -208,10 +208,6 @@ hr {
 .major__description {
   font-size: var(--font-small);
 }
-.major__description a {
-  color: var(--color-dark-grey);
-  font-size: var(--font-small);
-}
 .job {
   display: flex;
   align-items: center;
@@ -224,9 +220,7 @@ hr {
 .job__description {
   text-align: left;
 }
-.job__name {
-  color: var(--color-dark-grey);
-}
+.job__name,
 .job__period {
   color: var(--color-light-grey);
 }
@@ -285,8 +279,7 @@ hr {
 
 /* Work */
 #work {
-  /* background-color: var(--color-light-blue-background); */
-  background-color: var(--color-light-white);
+  background-color: var(--color-light-blue);
 }
 .work__categories {
   margin: 40px;
@@ -326,7 +319,6 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 30px;
   opacity: 1;
   transition: all var(--animation-duration) ease-out;
 }
@@ -522,9 +514,6 @@ hr {
   }
   .major {
     margin-bottom: 30px;
-  }
-  .about__jobs {
-    margin-top: 20px;
   }
   .job__logo {
     max-width: 140px;
